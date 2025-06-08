@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box" id="calculator">
+        <h1>Calculator</h1>
+        <div class="display" id="display">0</div>
+        <button class="toggle" id="toggle-scientific" onclick="toggleScientific()">≡</button>
+            <div id="small-btns">
+                <button onclick="appendtodisplay('√')">√</button>
+                <button onclick="appendtodisplay('π')">π</button>
+                <button onclick="appendtodisplay('^')">^</button>
+                <button onclick="appendtodisplay('!')">!</button>
+            </div>
+        <div class="hidden-buttons" id="hidden-buttons" style="display: none;">
+            <button onclick="appendtodisplay('sin(')">sin</button>
+            <button onclick="appendtodisplay('cos(')">cos</button>
+            <button onclick="appendtodisplay('tan(')">tan</button>
+            <button onclick="appendtodisplay('log(')">log</button>
+        </div>
+
+        <div id="buttons">
+            <button onclick="cleardisplay()">C</button>
+            <button onclick="appendtodisplay(')')">)</button>
+            <button onclick="appendtodisplay('%')">%</button>
+            <button onclick="appendtodisplay('÷')">÷</button>
+
+            <button onclick="appendtodisplay('7')">7</button>
+            <button onclick="appendtodisplay('8')">8</button>
+            <button onclick="appendtodisplay('9')">9</button>
+            <button onclick="appendtodisplay('x')">x</button>
+
+            <button onclick="appendtodisplay('4')">4</button>
+            <button onclick="appendtodisplay('5')">5</button>
+            <button onclick="appendtodisplay('6')">6</button>
+            <button onclick="appendtodisplay('-')">-</button>
+
+            <button onclick="appendtodisplay('1')">1</button>
+            <button onclick="appendtodisplay('2')">2</button>
+            <button onclick="appendtodisplay('3')">3</button>
+            <button onclick="appendtodisplay('+')">+</button>
+
+            <button onclick="appendtodisplay('0')">0</button>
+            <button onclick="appendtodisplay('.')">.</button>
+            <button onclick="backspace()">←</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
